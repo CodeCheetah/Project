@@ -1,0 +1,7 @@
+{
+	"title": "@Html.ActionLink(\"Project\", \"Index\", \"Home\", new { area = \"\" }, new { @class = \"navbar-brand\" })",
+	"links": {
+		"home": "@Html.ActionLink(\"Home\", \"Index\", \"Home\")",
+		"form": "@Html.ActionLink(\"Form\", \"Index\", \"Form\")"
+	}
+}

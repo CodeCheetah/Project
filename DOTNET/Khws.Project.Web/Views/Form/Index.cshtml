@@ -1,0 +1,38 @@
+
+@model Khws.Project.Web.ViewModels.FormViewModel
+
+@{
+ViewBag.Title = "Form";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+
+@using (Ajax.BeginForm("Submit", "Form", null, new AjaxOptions { HttpMethod = "POST" }, new {autocomplete ="off"}))
+{
+
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary(false)
+
+<div class="form-group">
+
+	@Html.TextBoxFor(model => model.Name, new { @type = "text", @id = "name", Name = "name", @placeholder = "Name", @class="form-control"})
+	
+</div>
+<div class="form-group">
+
+	@Html.TextBoxFor(model => model.Surname, new { @type = "text", @id = "surname", Name = "surname", @placeholder = "Surname", @class="form-control" })
+	
+</div>
+<div class="form-group">
+
+	@Html.TextBoxFor(model => model.Email, new { @type = "email", @id = "email", Name = "email", @placeholder = "Email", @class="form-control" })
+		
+</div>
+<div class="form-group">
+
+	<input id="submit" type="submit" value="Submit" class="btn btn-default"/>
+	
+</div>
+
+}

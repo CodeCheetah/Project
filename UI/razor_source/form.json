@@ -1,0 +1,14 @@
+{
+	"model":			"@model Khws.Project.Web.ViewModels.FormViewModel",
+	"title":			"@ViewBag.Title",
+	"variables":		"@{\r\nViewBag.Title = \"Form\";\n\r}",
+	"open":				"@using (Ajax.BeginForm(\"Submit\", \"Form\", null, new AjaxOptions { HttpMethod = \"POST\" }, new {autocomplete =\"off\"}))\n{",
+	"antiforgery":		"@Html.AntiForgeryToken()",
+	"validation":		"@Html.ValidationSummary(false)",
+	"close":			"}",
+	"field": {
+		"name":			"@Html.TextBoxFor(model => model.Name, new { @type = \"text\", @id = \"name\", Name = \"name\", @placeholder = \"Name\", @class=\"form-control\"})",
+		"surname":		"@Html.TextBoxFor(model => model.Surname, new { @type = \"text\", @id = \"surname\", Name = \"surname\", @placeholder = \"Surname\", @class=\"form-control\" })",
+		"email":		"@Html.TextBoxFor(model => model.Email, new { @type = \"email\", @id = \"email\", Name = \"email\", @placeholder = \"Email\", @class=\"form-control\" })"
+	}
+}

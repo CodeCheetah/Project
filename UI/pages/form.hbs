@@ -1,0 +1,70 @@
+---
+title: Form
+bodyClass: form
+---
+<!-- build:template
+<%= form.model %>
+/build -->
+
+<!-- build:template
+<%= form.variables %>
+/build -->
+
+<!-- build:template
+<h2><%= form.title %></h2>
+/build -->
+
+<!-- build:remove --><h2>Form</h2><!-- /build -->
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!-- build:template
+<%= form.open %>
+/build -->
+
+<!-- build:remove --><form action="process.php" autocomplete="off" id="form"><!-- /build -->
+
+	<!-- build:template
+	<%= form.antiforgery %>
+	/build -->
+	<!-- build:template
+	<%= form.validation %>
+	/build -->
+
+<div class="form-group">
+
+	<!-- build:template
+	<%= form.field.name %>
+	/build -->
+
+	<!-- build:remove --><input type="text" id="name" placeholder="Name" class="form-control"/><!-- /build -->
+	
+</div>
+<div class="form-group">
+
+	<!-- build:template
+	<%= form.field.surname %>
+	/build -->
+
+	<!-- build:remove --><input type="text" id="surname" placeholder="Surname" class="form-control"/><!-- /build -->
+	
+</div>
+<div class="form-group">
+
+	<!-- build:template
+	<%= form.field.email %>
+	/build -->
+
+	<!-- build:remove --><input type="email" id="email" placeholder="Email" class="form-control"/><!-- /build -->
+		
+</div>
+<div class="form-group">
+
+	<input id="submit" type="submit" value="Submit" class="btn btn-default"/>
+	
+</div>
+
+<!-- build:remove --></form><!-- /build -->
+
+<!-- build:template
+<%= form.close %>
+/build -->

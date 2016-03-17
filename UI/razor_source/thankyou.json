@@ -1,0 +1,5 @@
+{
+	"model": 		"@model Khws.Project.Web.ViewModels.ThankYouViewModel",
+	"variables":	"@{\r\nViewBag.Title = \"Thank You\";\r\n}",
+	"title":		"@ViewBag.Title"
+}

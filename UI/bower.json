@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "description": "Bridging the gap between front end and back end.",
+  "main": "index.html",
+  "authors": [
+    "Andrew S"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+	"jquery-validation": "jquery-validate#~1.14.0",
+    "jquery-validation-unobtrusive": "~3.2.5"
+  }
+}

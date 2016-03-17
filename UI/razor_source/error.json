@@ -1,0 +1,5 @@
+{
+	"model":		"@model Khws.Project.Web.ViewModels.ErrorViewModel",
+	"variables":	"@{\r\nViewBag.Title = \"Error\";\r\n}",
+	"title":		"@ViewBag.Title"
+}

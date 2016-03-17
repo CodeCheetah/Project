@@ -1,0 +1,17 @@
+{
+	"name": "Project",
+	"paths": {
+		"assets":			"assets",
+		"bower":			"bower_components/",
+		"css":				"assets/css",
+		"fonts":			"assets/fonts",
+		"js":				"assets/js",
+		"layouts":			"layouts",
+		"pages": 			"pages",
+		"partials":			"partials",
+		"dotnet":			"./DOTNET/Khws.Project.Web",
+		"razor":			"razor_source",
+		"build":			"./build/",
+		"templates":		"./razor_templates/"
+	}
+}

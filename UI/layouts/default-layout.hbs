@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- build:css assets/css/style.css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+	<!-- /build -->
+	
+	<!-- build:js assets/js/vendor.js -->
+	<script src="assets/js/vendor.js"></script>
+	<!-- /build -->
+	
+</head>
+<body class="{{bodyClass}}">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">
+			You are using an <strong>outdated</strong> browser.
+			Please <a href="http://browsehappy.com/">upgrade your browser</a>
+			to improve your experience.
+		</p>
+	<![endif]-->
+	{{>header}}
+	<section class="container body-content">
+		{{> body}}
+		{{>footer}}
+	</section>
+</body>
+</html>

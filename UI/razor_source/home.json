@@ -1,0 +1,6 @@
+{
+	"model": 		"@model Khws.Project.Web.ViewModels.HomeViewModel",
+	"variables":	"@{\r\nViewBag.Title = \"Home\";\r\n}",
+	"title":		"@ViewBag.Title",
+	"dashboard":	"@Html.Partial(\"_Dashboard\")"
+}
