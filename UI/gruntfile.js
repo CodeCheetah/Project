@@ -20,7 +20,7 @@ module.exports = function(grunt) {
   //Clean Up
   grunt.registerTask( 'cleanup', [ 'clean:templates','clean:dotnet_templates','clean:build','clean:dotnet_assets']);
   //Local Build
-  grunt.registerTask( 'build', [ 'copy:css','copy:fonts','concat:js','assemble:build'] );
+  grunt.registerTask( 'build', [ 'copy:css','copy:fonts','concat:js','assemble:build','connect','watch'] );
   //Template Build
   grunt.registerTask( 'templates', [ 'clean:templates','clean:dotnet_templates','copy:css','copy:fonts','concat:css','concat:js','assemble:razor','processhtml'] );
   //DotNet Integration
