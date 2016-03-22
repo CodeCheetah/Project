@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
   //Tasks
   grunt.loadTasks('grunt-tasks');
-
+  
   //Clean Up
   grunt.registerTask( 'cleanup', [ 'clean:templates','clean:dotnet_templates','clean:build','clean:dotnet_assets']);
   //Local Build

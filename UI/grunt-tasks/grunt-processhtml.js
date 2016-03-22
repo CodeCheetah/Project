@@ -25,5 +25,5 @@ module.exports = function(grunt) {
 			}
 	});
 
-	grunt.loadNpmTasks('processhtml');
+	grunt.loadNpmTasks('grunt-processhtml');
 };
